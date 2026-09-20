@@ -23,7 +23,7 @@ function ProductList() {
     <ul>
       {items.map((product: Product) => (
         <li key={product.id}>
-          {product.image} {product.name} — {product.price.toLocaleString('vi-VN')}đ{' '}
+          {product.name} — {product.price.toLocaleString('vi-VN')}đ{' '}
           <button onClick={() => dispatch(addToCart(product))}>Thêm vào giỏ</button>
         </li>
       ))}

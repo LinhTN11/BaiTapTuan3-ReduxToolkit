@@ -6,7 +6,6 @@ export interface Product {
   id: number
   name: string
   price: number
-  image: string
 }
 
 // State của slice products

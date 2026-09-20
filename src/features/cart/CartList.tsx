@@ -14,7 +14,7 @@ function CartList() {
       <ul>
         {items.map((item) => (
           <li key={item.product.id}>
-            {item.product.image} {item.product.name} —{' '}
+            {item.product.name} —{' '}
             {item.product.price.toLocaleString('vi-VN')}đ × {item.quantity} ={' '}
             {(item.product.price * item.quantity).toLocaleString('vi-VN')}đ{' '}
             <button
